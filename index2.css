@@ -152,6 +152,7 @@ form .SignUp{
     justify-content: center;
     align-items: center;
     width: 98%;
+    font-size: 3rem;
 }
 .cont1 h6{
     width: 59%;
@@ -159,7 +160,11 @@ form .SignUp{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: grey;
 }
+
 @media only screen and (max-width:  1135px) {
     #nav,#register{
         display: none;
@@ -288,6 +293,20 @@ form .SignUp{
     }
     .intro {
         margin-left: 2.3rem;
+    }
+    .cont1{
+        grid-template-columns: 1fr;
+    }
+    .cont1 p {
+        top: 118%;
+        left: 3%;
+        position: absolute;
+        font-size:2rem;
+    }
+    .cont1 h6{
+        top: 122%;
+        left: 21%;
+        position: absolute;
     }
     
 }
