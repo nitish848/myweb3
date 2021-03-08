@@ -82,6 +82,65 @@ main{
 a:hover{
     color: orangered;
 }
+#reg{
+    background-color: white;
+    height: 484px;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    z-index: 2;
+    border-radius: 1rem;
+    display: none;
+}
+.reg1{
+    background-color: white;
+    height: 484px;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    z-index: 2;
+    border-radius: 1rem;
+    display: block !important;
+}
+#cross{
+    position: absolute;
+    top: 7%;
+    left: 88%;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 7rem;
+    padding-right: 4rem;
+    padding-left: 5rem;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+}
+input{
+    padding: 4px;
+    width: 91%;
+    border: none;
+    border-bottom: black solid 2px;
+}
+form .SignUp{
+    position: absolute;
+    top: 86%;
+    left: 41%;
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1.7rem;
+    font-size: 1.5rem;
+    margin-top: -0.2rem;
+}
 @media only screen and (max-width:  1135px) {
     #nav,#register{
         display: none;
@@ -172,11 +231,21 @@ a:hover{
     
     
 }
+@media only screen and (max-width:  1018px) {
+    form .SignUp{
+        left: 33%;
+    }
+}
 
 @media only screen and (max-width:  592px) {
     .container {
         left: 70%;
     }
+    #cross {
+        position: absolute;
+        top: 7%;
+        left: 83%;
+    } 
 }
 @media only screen and (max-width:  400px) {
     .container {
@@ -189,9 +258,21 @@ a:hover{
     .intro {
         margin-left: 2.3rem;
     }
+       
 }
 @media only screen and (max-width:  394px) {
     .intro {
         margin-left: 2.9rem;
+    }
+    #reg{
+        width: 91%;
+        position: absolute;
+        top: 15%;
+        left: 4%;
+    }
+    #cross {
+        position: absolute;
+        top: 7%;
+        left: 81%;
     }
 }
