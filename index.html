@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
-    <title>Medika.</title>
+    <title>Medika</title>
 </head>
 
 <body>
@@ -27,13 +28,43 @@
                 <li><a class="nav-list" href="#">Services</a></li>
                 <li><a class="nav-list" href="#">Doctors</a></li>
                 <li><a class="nav-list" href="#">Review</a></li>
-               
+
             </ul>
         </div>
         <div id="register">
-            <button>Register</button>
+            <button onclick="myFunction1(this)">Register</button>
         </div>
-        
+        <div id="reg">
+            <div id="cross">
+                <i class="fa fa-close" onclick="myFunction2(this)" style="font-size:48px;color:red"></i>
+            </div>
+            <form action="">
+                <div class="name">
+                    <div class="fname">
+                        <label for="">First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="lname">
+                        <label for="">Last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <br>
+                <label for="">Email</label>
+                <br>
+                <input type="email">
+                <br>
+                <label for="">Password</label>
+                <br>
+                <input type="password">
+                <br>
+                <label for="">Confirm Password</label>
+                <br>
+                <input type="password">
+                <br>
+                <button class="SignUp">SignUp</button>
+            </form>
+        </div>
     </header>
     <main>
         <div class="circle">
@@ -53,7 +84,7 @@
             <li><a class="nav-list" href="#">Services</a></li>
             <li><a class="nav-list" href="#">Doctors</a></li>
             <li><a class="nav-list" href="#">Review</a></li>
-            <li><button>Register</button></li>
+            <li><button onclick="myFunction1(this)">Register</button></li>
         </ul>
     </div>
     <script>
@@ -62,11 +93,16 @@
             x.classList.toggle("change");
             var element = document.getElementById("nav1");
             element.classList.toggle("style1");
-            
-
-
         }
-        
+        function myFunction1(x) {
+            var element = document.getElementById("reg");
+            element.classList.toggle("reg1");
+        }
+        function myFunction2(x) {
+            var element = document.getElementById("reg");
+            element.classList.toggle("reg1");
+        }
+
     </script>
 </body>
 
