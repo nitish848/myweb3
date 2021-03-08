@@ -39,6 +39,7 @@ button{
     border-radius: 1.7rem;
     font-size: 1.8rem;
     margin-top: 3.8rem;
+    outline: none !important;
 }
 #nav1{
     display: none;
@@ -127,6 +128,7 @@ input{
     width: 91%;
     border: none;
     border-bottom: black solid 2px;
+    outline: none !important;
 }
 form .SignUp{
     position: absolute;
@@ -140,6 +142,23 @@ form .SignUp{
     border-radius: 1.7rem;
     font-size: 1.5rem;
     margin-top: -0.2rem;
+}
+.cont1{
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+}
+.cont1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+}
+.cont1 h6{
+    width: 59%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media only screen and (max-width:  1135px) {
     #nav,#register{
@@ -233,7 +252,18 @@ form .SignUp{
 }
 @media only screen and (max-width:  1018px) {
     form .SignUp{
-        left: 33%;
+        left: 40%;
+    }
+    .name input{
+        width: 74%;
+    }
+}
+
+@media only screen and (max-width:  600px) {
+    
+    form .SignUp{
+        left: 31%;
+        top: 91%;
     }
 }
 
@@ -246,6 +276,7 @@ form .SignUp{
         top: 7%;
         left: 83%;
     } 
+    
 }
 @media only screen and (max-width:  400px) {
     .container {
@@ -258,7 +289,7 @@ form .SignUp{
     .intro {
         margin-left: 2.3rem;
     }
-       
+    
 }
 @media only screen and (max-width:  394px) {
     .intro {
