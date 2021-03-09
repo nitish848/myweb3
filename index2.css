@@ -228,7 +228,7 @@ form .SignUp{
     font-size: 1.7rem;
 }
 .start{
-    background: url(/start.jpeg) center center no-repeat;
+    background: url(start.jpeg) center center no-repeat;
     height: 229px;
     border-radius: 10px;
     width: 34rem;
