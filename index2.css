@@ -1,5 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
+    margin: 0%;
 }
 header{
     display: grid;
@@ -165,6 +166,96 @@ form .SignUp{
     color: grey;
 }
 
+.option{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.box1{
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box2{
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box3{
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box4{
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    margin: 3rem;
+}
+.tweet,.insta,.face{
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 1.7rem;
+    font-size: 1rem;
+    margin-top: 0rem;
+}
+.bottom li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+ .bottom h3{
+    font-size: 1.7rem;
+}
+.start{
+    background: url(/start.jpeg) center center no-repeat;
+    height: 229px;
+    border-radius: 10px;
+    width: 34rem;
+    display: grid;
+    text-align: center;
+    margin-top: 6rem;
+}
+.cont5{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.cont4 p{
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+.cont4 button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1.7rem;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    outline: none !important;
+}
 @media only screen and (max-width:  1135px) {
     #nav,#register{
         display: none;
@@ -177,7 +268,7 @@ form .SignUp{
         cursor: pointer;
         margin: 4rem;
         position: absolute;
-        top: 2%;
+        top: 0%;
         left: 83%;
     }
     .bar1 .bar2 .bar3{
@@ -246,14 +337,40 @@ form .SignUp{
     border-radius: 6px;
     text-align: center;
 }
-
+@media only screen and (max-width:  664px) {
+    .option{
+        
+        grid-template-columns: 1fr 1fr;
+    }
+    .box3, .box4{
+        margin-top: 4rem;
+    }
+    .cont1 h6 {
+        width: 59%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 200;
+        color: grey;
+        width: 100%;
+    }
+    .cont1 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        font-size: 2rem;
+    }
+    .cont1{
+        grid-template-columns: 1fr;
+    }
+}
 @media only screen and (max-width:  773px) {
     .container {
         left: 78%;
-    }
-    
-    
-    
+    }  
 }
 @media only screen and (max-width:  1018px) {
     form .SignUp{
@@ -261,6 +378,19 @@ form .SignUp{
     }
     .name input{
         width: 74%;
+    } 
+    .start {
+        height: 250px;
+        width: 26rem;
+    }
+   
+}
+@media only screen and (max-width:  894px) {
+    .part5,.part2,.part3,.part4{
+        display: none;
+    }
+    .bottom {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -281,7 +411,10 @@ form .SignUp{
         top: 7%;
         left: 83%;
     } 
-    
+    .start{
+        height: 250px;
+        width: 17rem;
+    }
 }
 @media only screen and (max-width:  400px) {
     .container {
@@ -294,20 +427,8 @@ form .SignUp{
     .intro {
         margin-left: 2.3rem;
     }
-    .cont1{
-        grid-template-columns: 1fr;
-    }
-    .cont1 p {
-        top: 118%;
-        left: 3%;
-        position: absolute;
-        font-size:2rem;
-    }
-    .cont1 h6{
-        top: 122%;
-        left: 21%;
-        position: absolute;
-    }
+    
+    
     
 }
 @media only screen and (max-width:  394px) {
